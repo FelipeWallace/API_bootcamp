@@ -3,10 +3,12 @@ dotenv.config();
 
 const {
     PORT,
-    pgConnection
+    pgConnection,
+    apiToken
 } = process.env;
 
 module.exports = {
     port: PORT,
-    urlConnection: pgConnection
+    urlConnection: pgConnection,
+    apiToken: `Bearer ${apiToken}`, //apiToken
 }
